@@ -1,0 +1,15 @@
+../Core/Src/main.c:74:6:number0	8	static
+../Core/Src/main.c:83:6:number1	8	static
+../Core/Src/main.c:92:6:number2	8	static
+../Core/Src/main.c:101:6:number3	8	static
+../Core/Src/main.c:110:6:number4	8	static
+../Core/Src/main.c:119:6:number5	8	static
+../Core/Src/main.c:128:6:number6	8	static
+../Core/Src/main.c:137:6:number7	8	static
+../Core/Src/main.c:146:6:number8	8	static
+../Core/Src/main.c:155:6:number9	8	static
+../Core/Src/main.c:164:6:numberVoid	8	static
+../Core/Src/main.c:185:5:main	24	static
+../Core/Src/main.c:321:6:SystemClock_Config	88	static
+../Core/Src/main.c:363:13:MX_GPIO_Init	4	static
+../Core/Src/main.c:404:6:Error_Handler	4	static,ignoring_inline_asm

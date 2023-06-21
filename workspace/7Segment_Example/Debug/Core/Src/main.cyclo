@@ -1,0 +1,15 @@
+main.c:74:6:number0	1
+main.c:83:6:number1	1
+main.c:92:6:number2	1
+main.c:101:6:number3	1
+main.c:110:6:number4	1
+main.c:119:6:number5	1
+main.c:128:6:number6	1
+main.c:137:6:number7	1
+main.c:146:6:number8	1
+main.c:155:6:number9	1
+main.c:164:6:numberVoid	1
+main.c:185:5:main	5
+main.c:321:6:SystemClock_Config	3
+main.c:363:13:MX_GPIO_Init	1
+main.c:404:6:Error_Handler	1

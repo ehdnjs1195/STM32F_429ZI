@@ -1,0 +1,33 @@
+15:24:59 **** Build of configuration Debug for project stm32_i2c ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'LCD_Init' [-Wimplicit-function-declaration]
+  138 |   LCD_Init();
+      |   ^~~~~~~~
+../Core/Src/main.c:151:3: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  151 |   init();
+      |   ^~~~
+../Core/Src/main.c:188:3: warning: implicit declaration of function 'LCD_SendCommand' [-Wimplicit-function-declaration]
+  188 |   LCD_SendCommand((0x27 << 1), 0b10000000); //0x00
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:189:3: warning: implicit declaration of function 'LCD_SendString' [-Wimplicit-function-declaration]
+  189 |   LCD_SendString((0x27 << 1), lcdPrint);
+      |   ^~~~~~~~~~~~~~
+../Core/Src/main.c:121:21: warning: unused variable 'res' [-Wunused-variable]
+  121 |   HAL_StatusTypeDef res;
+      |                     ^~~
+arm-none-eabi-gcc -o "stm32_i2c.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ARM Cortex-M\workspace\stm32_i2c\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32_i2c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32_i2c.elf
+ 
+arm-none-eabi-size   stm32_i2c.elf 
+arm-none-eabi-objdump -h -S  stm32_i2c.elf  > "stm32_i2c.list"
+   text	   data	    bss	    dec	    hex	filename
+  25512	    120	   2056	  27688	   6c28	stm32_i2c.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32_i2c.list
+ 
+
+15:25:01 Build Finished. 0 errors, 5 warnings. (took 2s.2ms)
+

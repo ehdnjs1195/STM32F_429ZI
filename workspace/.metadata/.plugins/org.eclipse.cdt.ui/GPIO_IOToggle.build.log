@@ -1,0 +1,31 @@
+09:23:26 **** Build of configuration Debug for project GPIO_IOToggle ****
+make all 
+arm-none-eabi-gcc "D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F429xx -DUSE_HAL_DRIVER -DUSE_STM32F4XX_NUCLEO_144 -c -I../../../Inc -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../../Drivers/CMSIS/Include -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/BSP/STM32F4xx_Nucleo_144 -Os -ffunction-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/main.d" -MT"Example/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/User/main.o"
+D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c: In function 'main':
+D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c:99:9: warning: implicit declaration of function 'number0' [-Wimplicit-function-declaration]
+   99 |         number0();
+      |         ^~~~~~~
+D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c: At top level:
+D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c:111:6: warning: conflicting types for 'number0'
+  111 | void number0(){
+      |      ^~~~~~~
+D:/ARM Cortex-M/workspace/GPIO_IOToggle/Src/main.c:99:9: note: previous implicit declaration of 'number0' was here
+   99 |         number0();
+      |         ^~~~~~~
+arm-none-eabi-gcc -o "STM32F429ZI_NUCLEO_144.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F429ZITx_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F429ZI_NUCLEO_144.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F429ZI_NUCLEO_144.elf
+ 
+arm-none-eabi-size   STM32F429ZI_NUCLEO_144.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4192	     52	   1588	   5832	   16c8	STM32F429ZI_NUCLEO_144.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  STM32F429ZI_NUCLEO_144.elf  > "STM32F429ZI_NUCLEO_144.list"
+Finished building: STM32F429ZI_NUCLEO_144.list
+ 
+arm-none-eabi-objcopy  -O binary  STM32F429ZI_NUCLEO_144.elf  "STM32F429ZI_NUCLEO_144.bin"
+Finished building: STM32F429ZI_NUCLEO_144.bin
+ 
+
+09:23:29 Build Finished. 0 errors, 2 warnings. (took 3s.765ms)
+

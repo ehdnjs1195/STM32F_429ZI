@@ -1,0 +1,17 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:7Segment_Example Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_TEST,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Example Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXTI_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_7segment Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_LED_Blink Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:DAC_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_Example Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST3 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_IOToggle Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32_i2c,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST2 Debug (1),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_Example Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_Buzzer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_BUZ Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:OCIC_TEST Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:OCIC_Ultrasonic Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Test
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:7Segment_Example\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:7Segment_Example\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXTI_TEST\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_IOToggle\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_IOToggle\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_TEST/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_TEST/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_Example\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PWM_TEST\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST2\ Debug\ (1)/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer_TEST3\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Timer_TEST2\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

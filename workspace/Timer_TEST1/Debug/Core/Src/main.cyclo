@@ -1,0 +1,12 @@
+main.c:75:6:slideLine	3
+main.c:110:6:HAL_SYSTICK_Callback	2
+main.c:125:5:main	4
+main.c:197:6:SystemClock_Config	3
+main.c:243:13:MX_NVIC_Init	1
+main.c:261:13:MX_I2C1_Init	4
+main.c:309:13:MX_RTC_Init	2
+main.c:344:13:MX_TIM3_Init	4
+main.c:389:13:MX_USART3_UART_Init	2
+main.c:422:13:MX_GPIO_Init	1
+main.c:460:6:HAL_GPIO_EXTI_Callback	2
+main.c:473:6:Error_Handler	1

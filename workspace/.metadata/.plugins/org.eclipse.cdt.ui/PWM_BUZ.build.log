@@ -1,0 +1,24 @@
+11:16:29 **** Incremental Build of configuration Debug for project PWM_BUZ ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:150:11: warning: unused variable 'interval' [-Wunused-variable]
+  150 |   uint8_t interval[] = {10, 10, 100, 10, 10, 10, 10, 10, 10, 10, 10, 10, 244,
+      |           ^~~~~~~~
+../Core/Src/main.c:149:11: warning: unused variable 'bell_length' [-Wunused-variable]
+  149 |   uint8_t bell_length = sizeof(bell)/sizeof(uint16_t);
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "PWM_BUZ.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ARM Cortex-M\workspace\PWM_BUZ\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_BUZ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_BUZ.elf
+ 
+arm-none-eabi-size   PWM_BUZ.elf 
+arm-none-eabi-objdump -h -S  PWM_BUZ.elf  > "PWM_BUZ.list"
+   text	   data	    bss	    dec	    hex	filename
+  15364	     20	   1716	  17100	   42cc	PWM_BUZ.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_BUZ.list
+ 
+
+11:16:30 Build Finished. 0 errors, 2 warnings. (took 1s.62ms)
+
